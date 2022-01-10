@@ -1,9 +1,8 @@
 //
 //  GameViewController.swift
-//  DiveIntoSpriteKit
 //
-//  Created by Paul Hudson on 16/10/2017.
-//  Copyright © 2017 Paul Hudson. All rights reserved.
+//  GameScene.swift
+//  Stan the fish by Jean Nguyen
 //
 
 import UIKit
