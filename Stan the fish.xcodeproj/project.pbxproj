@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B33FC678278C383400F9939F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33FC677278C383400F9939F /* AppDelegate.swift */; };
+		B33FC67A278C383400F9939F /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B33FC679278C383400F9939F /* GameScene.sks */; };
+		B33FC67C278C383400F9939F /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = B33FC67B278C383400F9939F /* Actions.sks */; };
+		B33FC67E278C383400F9939F /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33FC67D278C383400F9939F /* GameScene.swift */; };
+		B33FC680278C383400F9939F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33FC67F278C383400F9939F /* GameViewController.swift */; };
+		B33FC683278C383400F9939F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33FC681278C383400F9939F /* Main.storyboard */; };
+		B33FC685278C383700F9939F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B33FC684278C383700F9939F /* Assets.xcassets */; };
+		B33FC688278C383700F9939F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33FC686278C383700F9939F /* LaunchScreen.storyboard */; };
+		B33FC692278C383700F9939F /* Stan_the_fishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33FC691278C383700F9939F /* Stan_the_fishTests.swift */; };
+		B33FC69C278C383700F9939F /* Stan_the_fishUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33FC69B278C383700F9939F /* Stan_the_fishUITests.swift */; };
+		B33FC69E278C383700F9939F /* Stan_the_fishUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33FC69D278C383700F9939F /* Stan_the_fishUITestsLaunchTests.swift */; };
+		B33FC6AB278C3B7900F9939F /* Bubbles.sks in Resources */ = {isa = PBXBuildFile; fileRef = B33FC6AA278C3B7900F9939F /* Bubbles.sks */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B33FC68E278C383700F9939F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B33FC66C278C383400F9939F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B33FC673278C383400F9939F;
+			remoteInfo = "Stan the fish";
+		};
+		B33FC698278C383700F9939F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B33FC66C278C383400F9939F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B33FC673278C383400F9939F;
+			remoteInfo = "Stan the fish";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B33FC674278C383400F9939F /* Stan the fish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stan the fish.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B33FC677278C383400F9939F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B33FC679278C383400F9939F /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		B33FC67B278C383400F9939F /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		B33FC67D278C383400F9939F /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		B33FC67F278C383400F9939F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		B33FC682278C383400F9939F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B33FC684278C383700F9939F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B33FC687278C383700F9939F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B33FC68D278C383700F9939F /* Stan the fishTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stan the fishTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B33FC691278C383700F9939F /* Stan_the_fishTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stan_the_fishTests.swift; sourceTree = "<group>"; };
+		B33FC697278C383700F9939F /* Stan the fishUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stan the fishUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B33FC69B278C383700F9939F /* Stan_the_fishUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stan_the_fishUITests.swift; sourceTree = "<group>"; };
+		B33FC69D278C383700F9939F /* Stan_the_fishUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stan_the_fishUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B33FC6AA278C3B7900F9939F /* Bubbles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Bubbles.sks; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B33FC671278C383400F9939F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B33FC68A278C383700F9939F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B33FC694278C383700F9939F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B33FC66B278C383400F9939F = {
+			isa = PBXGroup;
+			children = (
+				B33FC676278C383400F9939F /* Stan the fish */,
+				B33FC690278C383700F9939F /* Stan the fishTests */,
+				B33FC69A278C383700F9939F /* Stan the fishUITests */,
+				B33FC675278C383400F9939F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B33FC675278C383400F9939F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B33FC674278C383400F9939F /* Stan the fish.app */,
+				B33FC68D278C383700F9939F /* Stan the fishTests.xctest */,
+				B33FC697278C383700F9939F /* Stan the fishUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B33FC676278C383400F9939F /* Stan the fish */ = {
+			isa = PBXGroup;
+			children = (
+				B33FC677278C383400F9939F /* AppDelegate.swift */,
+				B33FC679278C383400F9939F /* GameScene.sks */,
+				B33FC67B278C383400F9939F /* Actions.sks */,
+				B33FC67D278C383400F9939F /* GameScene.swift */,
+				B33FC6AA278C3B7900F9939F /* Bubbles.sks */,
+				B33FC67F278C383400F9939F /* GameViewController.swift */,
+				B33FC681278C383400F9939F /* Main.storyboard */,
+				B33FC684278C383700F9939F /* Assets.xcassets */,
+				B33FC686278C383700F9939F /* LaunchScreen.storyboard */,
+			);
+			path = "Stan the fish";
+			sourceTree = "<group>";
+		};
+		B33FC690278C383700F9939F /* Stan the fishTests */ = {
+			isa = PBXGroup;
+			children = (
+				B33FC691278C383700F9939F /* Stan_the_fishTests.swift */,
+			);
+			path = "Stan the fishTests";
+			sourceTree = "<group>";
+		};
+		B33FC69A278C383700F9939F /* Stan the fishUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B33FC69B278C383700F9939F /* Stan_the_fishUITests.swift */,
+				B33FC69D278C383700F9939F /* Stan_the_fishUITestsLaunchTests.swift */,
+			);
+			path = "Stan the fishUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B33FC673278C383400F9939F /* Stan the fish */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B33FC6A1278C383700F9939F /* Build configuration list for PBXNativeTarget "Stan the fish" */;
+			buildPhases = (
+				B33FC670278C383400F9939F /* Sources */,
+				B33FC671278C383400F9939F /* Frameworks */,
+				B33FC672278C383400F9939F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Stan the fish";
+			productName = "Stan the fish";
+			productReference = B33FC674278C383400F9939F /* Stan the fish.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B33FC68C278C383700F9939F /* Stan the fishTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B33FC6A4278C383700F9939F /* Build configuration list for PBXNativeTarget "Stan the fishTests" */;
+			buildPhases = (
+				B33FC689278C383700F9939F /* Sources */,
+				B33FC68A278C383700F9939F /* Frameworks */,
+				B33FC68B278C383700F9939F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B33FC68F278C383700F9939F /* PBXTargetDependency */,
+			);
+			name = "Stan the fishTests";
+			productName = "Stan the fishTests";
+			productReference = B33FC68D278C383700F9939F /* Stan the fishTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B33FC696278C383700F9939F /* Stan the fishUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B33FC6A7278C383700F9939F /* Build configuration list for PBXNativeTarget "Stan the fishUITests" */;
+			buildPhases = (
+				B33FC693278C383700F9939F /* Sources */,
+				B33FC694278C383700F9939F /* Frameworks */,
+				B33FC695278C383700F9939F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B33FC699278C383700F9939F /* PBXTargetDependency */,
+			);
+			name = "Stan the fishUITests";
+			productName = "Stan the fishUITests";
+			productReference = B33FC697278C383700F9939F /* Stan the fishUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B33FC66C278C383400F9939F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					B33FC673278C383400F9939F = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					B33FC68C278C383700F9939F = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = B33FC673278C383400F9939F;
+					};
+					B33FC696278C383700F9939F = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = B33FC673278C383400F9939F;
+					};
+				};
+			};
+			buildConfigurationList = B33FC66F278C383400F9939F /* Build configuration list for PBXProject "Stan the fish" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B33FC66B278C383400F9939F;
+			productRefGroup = B33FC675278C383400F9939F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B33FC673278C383400F9939F /* Stan the fish */,
+				B33FC68C278C383700F9939F /* Stan the fishTests */,
+				B33FC696278C383700F9939F /* Stan the fishUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B33FC672278C383400F9939F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B33FC683278C383400F9939F /* Main.storyboard in Resources */,
+				B33FC6AB278C3B7900F9939F /* Bubbles.sks in Resources */,
+				B33FC67A278C383400F9939F /* GameScene.sks in Resources */,
+				B33FC685278C383700F9939F /* Assets.xcassets in Resources */,
+				B33FC688278C383700F9939F /* LaunchScreen.storyboard in Resources */,
+				B33FC67C278C383400F9939F /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B33FC68B278C383700F9939F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B33FC695278C383700F9939F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B33FC670278C383400F9939F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B33FC67E278C383400F9939F /* GameScene.swift in Sources */,
+				B33FC680278C383400F9939F /* GameViewController.swift in Sources */,
+				B33FC678278C383400F9939F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B33FC689278C383700F9939F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B33FC692278C383700F9939F /* Stan_the_fishTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B33FC693278C383700F9939F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B33FC69E278C383700F9939F /* Stan_the_fishUITestsLaunchTests.swift in Sources */,
+				B33FC69C278C383700F9939F /* Stan_the_fishUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B33FC68F278C383700F9939F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B33FC673278C383400F9939F /* Stan the fish */;
+			targetProxy = B33FC68E278C383700F9939F /* PBXContainerItemProxy */;
+		};
+		B33FC699278C383700F9939F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B33FC673278C383400F9939F /* Stan the fish */;
+			targetProxy = B33FC698278C383700F9939F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B33FC681278C383400F9939F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B33FC682278C383400F9939F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B33FC686278C383700F9939F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B33FC687278C383700F9939F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B33FC69F278C383700F9939F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B33FC6A0278C383700F9939F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B33FC6A2278C383700F9939F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FDLYQUYY8J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jean.Stan-the-fish";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B33FC6A3278C383700F9939F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FDLYQUYY8J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jean.Stan-the-fish";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B33FC6A5278C383700F9939F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FDLYQUYY8J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jean.Stan-the-fishTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stan the fish.app/Stan the fish";
+			};
+			name = Debug;
+		};
+		B33FC6A6278C383700F9939F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FDLYQUYY8J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jean.Stan-the-fishTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stan the fish.app/Stan the fish";
+			};
+			name = Release;
+		};
+		B33FC6A8278C383700F9939F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FDLYQUYY8J;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jean.Stan-the-fishUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Stan the fish";
+			};
+			name = Debug;
+		};
+		B33FC6A9278C383700F9939F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FDLYQUYY8J;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jean.Stan-the-fishUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Stan the fish";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B33FC66F278C383400F9939F /* Build configuration list for PBXProject "Stan the fish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B33FC69F278C383700F9939F /* Debug */,
+				B33FC6A0278C383700F9939F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B33FC6A1278C383700F9939F /* Build configuration list for PBXNativeTarget "Stan the fish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B33FC6A2278C383700F9939F /* Debug */,
+				B33FC6A3278C383700F9939F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B33FC6A4278C383700F9939F /* Build configuration list for PBXNativeTarget "Stan the fishTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B33FC6A5278C383700F9939F /* Debug */,
+				B33FC6A6278C383700F9939F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B33FC6A7278C383700F9939F /* Build configuration list for PBXNativeTarget "Stan the fishUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B33FC6A8278C383700F9939F /* Debug */,
+				B33FC6A9278C383700F9939F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B33FC66C278C383400F9939F /* Project object */;
+}
