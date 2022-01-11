@@ -20,6 +20,8 @@
 		B33FC69E278C383700F9939F /* Stan_the_fishUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33FC69D278C383700F9939F /* Stan_the_fishUITestsLaunchTests.swift */; };
 		B3BB70DE278DB3E700E19F9C /* WaterExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = B3BB70DD278DB3E700E19F9C /* WaterExplosion.sks */; };
 		B3BB70E0278DD01700E19F9C /* theme-for-harold.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B3BB70DF278DD01700E19F9C /* theme-for-harold.mp3 */; };
+		B3BB70E6278E09F700E19F9C /* score.wav in Resources */ = {isa = PBXBuildFile; fileRef = B3BB70E5278E09F700E19F9C /* score.wav */; };
+		B3BB70E8278E0B8400E19F9C /* explosion.wav in Resources */ = {isa = PBXBuildFile; fileRef = B3BB70E7278E0B8400E19F9C /* explosion.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		B33FC69D278C383700F9939F /* Stan_the_fishUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stan_the_fishUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B3BB70DD278DB3E700E19F9C /* WaterExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = WaterExplosion.sks; sourceTree = "<group>"; };
 		B3BB70DF278DD01700E19F9C /* theme-for-harold.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "theme-for-harold.mp3"; sourceTree = "<group>"; };
+		B3BB70E5278E09F700E19F9C /* score.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = score.wav; sourceTree = "<group>"; };
+		B3BB70E7278E0B8400E19F9C /* explosion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explosion.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 				B33FC684278C383700F9939F /* Assets.xcassets */,
 				B33FC686278C383700F9939F /* LaunchScreen.storyboard */,
 				B3BB70DF278DD01700E19F9C /* theme-for-harold.mp3 */,
+				B3BB70E7278E0B8400E19F9C /* explosion.wav */,
+				B3BB70E5278E09F700E19F9C /* score.wav */,
 			);
 			path = "Stan the fish";
 			sourceTree = "<group>";
@@ -241,7 +247,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3BB70E8278E0B8400E19F9C /* explosion.wav in Resources */,
 				B33FC683278C383400F9939F /* Main.storyboard in Resources */,
+				B3BB70E6278E09F700E19F9C /* score.wav in Resources */,
 				B33FC67A278C383400F9939F /* GameScene.sks in Resources */,
 				B33FC685278C383700F9939F /* Assets.xcassets in Resources */,
 				B3BB70E0278DD01700E19F9C /* theme-for-harold.mp3 in Resources */,

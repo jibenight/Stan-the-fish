@@ -21,9 +21,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     
     override func didMove(to view: SKView) {
-        
-        // add music
-        addChild(music)
+    
+        //position of the player
+        player.position = CGPoint(x: -400, y: 250)
+        player.physicsBody = SKPhysicsBody(texture: player.texture!, size: player.texture!.size())
+        player.physicsBody?.categoryBitMask = 1
+        // fix bug collision
+        player.physicsBody?.collisionBitMask = 0
+        addChild(player)
         
         //scoring design
         scoreLabel.fontColor = UIColor.black.withAlphaComponent(0.5)
@@ -31,23 +36,21 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         addChild(scoreLabel)
         score = 0
         
-        //position of the player
-        player.position = CGPoint(x: -400, y: 250)
-        addChild(player)
-        player.physicsBody?.categoryBitMask = 1
-        // fix bug collision
-        player.physicsBody?.collisionBitMask = 0
+        // timer
+        gameTimer = Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(createObstacle), userInfo: nil, repeats: true)
+
+        // creation gravity world
+        physicsWorld.gravity = CGVector(dx: 0, dy: -5)
+        physicsWorld.contactDelegate = self
         
-        physicsWorld.gravity = CGVector(dx: 0,dy: -5)
-        player.physicsBody = SKPhysicsBody(texture: player.texture!, size: player.texture!.size())
         
         // launch the parallax effect
         parallaxScroll(image: "sea", y: 0, z: -3, duration: 10, needsPhysics: false)
         parallaxScroll(image: "sand", y: -340, z: -1, duration: 6, needsPhysics: true)
+        // add music
+        addChild(music)
         
-        gameTimer = Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(createObstacle), userInfo: nil, repeats: true)
-        
-        physicsWorld.contactDelegate = self
+       
              
     }
 
@@ -69,11 +72,41 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         if player.position.y > 300 {
             player.position.y = 300
         }
+        
         // this method is called before each frame is rendered
         let value = player.physicsBody!.velocity.dy * 0.001
         let rotate = SKAction.rotate(toAngle: value, duration: 0.1)
         player.run(rotate)
     }
+    
+    // create a parralax effect for the background
+    func parallaxScroll(image: String, y: CGFloat, z: CGFloat, duration: Double, needsPhysics: Bool){
+        //run this code twice
+        for i in 0 ... 1 {
+            let node = SKSpriteNode(imageNamed: image)
+            //position the first node on the left, and position the second on the right
+            node.position = CGPoint(x:1023 * CGFloat(i), y: y)
+            node.zPosition = z
+            addChild(node)
+            // for collission
+            if needsPhysics {
+                node.physicsBody = SKPhysicsBody(texture: node.texture!, size: node.texture!.size())
+                node.physicsBody?.isDynamic = false
+                node.physicsBody?.contactTestBitMask = 1
+                node.name = "obstacle"
+            }
+            // make this node move the width of the screen by whatever duration was passed in
+            let move = SKAction.moveBy(x: -1024, y: 0, duration: duration)
+            // make it jump back to the right edge
+            let wrap = SKAction.moveBy(x: 1024, y: 0, duration: 0)
+            // make these two as a sequence that loops forever
+            let sequence = SKAction.sequence([move, wrap])
+            let forever = SKAction.repeatForever(sequence)
+            // run the animations
+            node.run(forever)
+       }
+    }
+
     
     func createObstacle(){
         //create and position the enemy
@@ -113,12 +146,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     func playerHit(_ node: SKNode){
         if node.name == "obstacle"{
+            
             if let explosion = SKEmitterNode(fileNamed: "WaterExplosion") {
                 explosion.position = player.position
                 addChild(explosion)
             }
+            
+            run(SKAction.playSoundFileNamed("explosion.wav", waitForCompletion: false))
             player.removeFromParent()
             music.removeFromParent()
+            
             //wait for two seconds them run some code
             DispatchQueue.main.asyncAfter(deadline: .now() + 2){
                 //create a new scene from GameScene.sks
@@ -131,6 +168,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             }
             
         } else if node.name == "score"{
+            run(SKAction.playSoundFileNamed("score.wav", waitForCompletion: false))
             node.removeFromParent()
             score += 1
         }
@@ -148,33 +186,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     
-    // create a parralax effect for the background
-    func parallaxScroll(image: String, y: CGFloat, z: CGFloat, duration: Double, needsPhysics: Bool){
-        //run this code twice
-        for i in 0 ... 1 {
-            let node = SKSpriteNode(imageNamed: image)
-            //position the first node on the left, and position the second on the right
-            node.position = CGPoint(x:1023 * CGFloat(i), y: y)
-            node.zPosition = z
-            addChild(node)
-            // for collission
-            if needsPhysics {
-                node.physicsBody = SKPhysicsBody(texture: node.texture!, size: node.texture!.size())
-                node.physicsBody?.isDynamic = false
-                node.physicsBody?.contactTestBitMask = 1
-                node.name = "obstacle"
-            }
-            // make this node move the width of the screen by whatever duration was passed in
-            let move = SKAction.moveBy(x: -1024, y: 0, duration: duration)
-            // make it jump back to the right edge
-            let wrap = SKAction.moveBy(x: 1024, y: 0, duration: 0)
-            // make these two as a sequence that loops forever
-            let sequence = SKAction.sequence([move, wrap])
-            let forever = SKAction.repeatForever(sequence)
-            // run the animations
-            node.run(forever)
-       }
-    }
 }
 
 
