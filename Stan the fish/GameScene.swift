@@ -9,7 +9,7 @@ import SpriteKit
 @objcMembers
 class GameScene: SKScene, SKPhysicsContactDelegate {
     // global variable
-    let player = SKSpriteNode(imageNamed: "player-submarine")
+    let player = SKSpriteNode(imageNamed: "stan")
     var gameTimer: Timer?
     let scoreLabel = SKLabelNode(fontNamed: "Barkerville-Bold")
     var score = 0 {
@@ -24,15 +24,20 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         // add music
         addChild(music)
+        
         //scoring design
         scoreLabel.fontColor = UIColor.black.withAlphaComponent(0.5)
         scoreLabel.position.y = 320
         addChild(scoreLabel)
         score = 0
+        
         //position of the player
         player.position = CGPoint(x: -400, y: 250)
         addChild(player)
         player.physicsBody?.categoryBitMask = 1
+        // fix bug collision
+        player.physicsBody?.collisionBitMask = 0
+        
         physicsWorld.gravity = CGVector(dx: 0,dy: -5)
         player.physicsBody = SKPhysicsBody(texture: player.texture!, size: player.texture!.size())
         
@@ -59,6 +64,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
 
     override func update(_ currentTime: TimeInterval) {
+        
+        // fix position player
+        if player.position.y > 300 {
+            player.position.y = 300
+        }
         // this method is called before each frame is rendered
         let value = player.physicsBody!.velocity.dy * 0.001
         let rotate = SKAction.rotate(toAngle: value, duration: 0.1)
@@ -81,8 +91,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         //decide where to create it
         let rand = GKRandomDistribution(lowestValue: -300, highestValue: 350)
         obstacle.position.y = CGFloat(rand.nextInt())
+        
         //make it move across the screen
-        let action = SKAction.moveTo(x: -768, duration: 9)
+        let move = SKAction.moveTo(x: -768, duration: 9)
+        let remove = SKAction.removeFromParent()
+        let action = SKAction.sequence([move, remove])
         obstacle.run(action)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.75){
@@ -106,6 +119,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             }
             player.removeFromParent()
             music.removeFromParent()
+            //wait for two seconds them run some code
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2){
+                //create a new scene from GameScene.sks
+                if let scene = GameScene(fileNamed: "GameScene"){
+                    //make it stretch to fill all available space
+                    scene.scaleMode = .aspectFill
+                    //present it immediately
+                    self.view?.presentScene(scene)
+                }
+            }
+            
         } else if node.name == "score"{
             node.removeFromParent()
             score += 1
