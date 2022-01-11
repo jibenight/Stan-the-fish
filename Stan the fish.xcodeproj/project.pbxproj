@@ -18,7 +18,7 @@
 		B33FC692278C383700F9939F /* Stan_the_fishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33FC691278C383700F9939F /* Stan_the_fishTests.swift */; };
 		B33FC69C278C383700F9939F /* Stan_the_fishUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33FC69B278C383700F9939F /* Stan_the_fishUITests.swift */; };
 		B33FC69E278C383700F9939F /* Stan_the_fishUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33FC69D278C383700F9939F /* Stan_the_fishUITestsLaunchTests.swift */; };
-		B33FC6AB278C3B7900F9939F /* Bubbles.sks in Resources */ = {isa = PBXBuildFile; fileRef = B33FC6AA278C3B7900F9939F /* Bubbles.sks */; };
+		B3BB70DE278DB3E700E19F9C /* WaterExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = B3BB70DD278DB3E700E19F9C /* WaterExplosion.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +53,7 @@
 		B33FC697278C383700F9939F /* Stan the fishUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stan the fishUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B33FC69B278C383700F9939F /* Stan_the_fishUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stan_the_fishUITests.swift; sourceTree = "<group>"; };
 		B33FC69D278C383700F9939F /* Stan_the_fishUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stan_the_fishUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B33FC6AA278C3B7900F9939F /* Bubbles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Bubbles.sks; sourceTree = "<group>"; };
+		B3BB70DD278DB3E700E19F9C /* WaterExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = WaterExplosion.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +108,7 @@
 				B33FC679278C383400F9939F /* GameScene.sks */,
 				B33FC67B278C383400F9939F /* Actions.sks */,
 				B33FC67D278C383400F9939F /* GameScene.swift */,
-				B33FC6AA278C3B7900F9939F /* Bubbles.sks */,
+				B3BB70DD278DB3E700E19F9C /* WaterExplosion.sks */,
 				B33FC67F278C383400F9939F /* GameViewController.swift */,
 				B33FC681278C383400F9939F /* Main.storyboard */,
 				B33FC684278C383700F9939F /* Assets.xcassets */,
@@ -239,11 +239,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B33FC683278C383400F9939F /* Main.storyboard in Resources */,
-				B33FC6AB278C3B7900F9939F /* Bubbles.sks in Resources */,
 				B33FC67A278C383400F9939F /* GameScene.sks in Resources */,
 				B33FC685278C383700F9939F /* Assets.xcassets in Resources */,
 				B33FC688278C383700F9939F /* LaunchScreen.storyboard in Resources */,
 				B33FC67C278C383400F9939F /* Actions.sks in Resources */,
+				B3BB70DE278DB3E700E19F9C /* WaterExplosion.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
