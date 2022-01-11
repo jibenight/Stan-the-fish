@@ -19,6 +19,7 @@
 		B33FC69C278C383700F9939F /* Stan_the_fishUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33FC69B278C383700F9939F /* Stan_the_fishUITests.swift */; };
 		B33FC69E278C383700F9939F /* Stan_the_fishUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33FC69D278C383700F9939F /* Stan_the_fishUITestsLaunchTests.swift */; };
 		B3BB70DE278DB3E700E19F9C /* WaterExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = B3BB70DD278DB3E700E19F9C /* WaterExplosion.sks */; };
+		B3BB70E0278DD01700E19F9C /* theme-for-harold.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B3BB70DF278DD01700E19F9C /* theme-for-harold.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		B33FC69B278C383700F9939F /* Stan_the_fishUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stan_the_fishUITests.swift; sourceTree = "<group>"; };
 		B33FC69D278C383700F9939F /* Stan_the_fishUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stan_the_fishUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B3BB70DD278DB3E700E19F9C /* WaterExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = WaterExplosion.sks; sourceTree = "<group>"; };
+		B3BB70DF278DD01700E19F9C /* theme-for-harold.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "theme-for-harold.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				B33FC681278C383400F9939F /* Main.storyboard */,
 				B33FC684278C383700F9939F /* Assets.xcassets */,
 				B33FC686278C383700F9939F /* LaunchScreen.storyboard */,
+				B3BB70DF278DD01700E19F9C /* theme-for-harold.mp3 */,
 			);
 			path = "Stan the fish";
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				B33FC683278C383400F9939F /* Main.storyboard in Resources */,
 				B33FC67A278C383400F9939F /* GameScene.sks in Resources */,
 				B33FC685278C383700F9939F /* Assets.xcassets in Resources */,
+				B3BB70E0278DD01700E19F9C /* theme-for-harold.mp3 in Resources */,
 				B33FC688278C383700F9939F /* LaunchScreen.storyboard in Resources */,
 				B33FC67C278C383400F9939F /* Actions.sks in Resources */,
 				B3BB70DE278DB3E700E19F9C /* WaterExplosion.sks in Resources */,

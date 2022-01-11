@@ -8,12 +8,27 @@ import SpriteKit
 
 @objcMembers
 class GameScene: SKScene, SKPhysicsContactDelegate {
-    
+    // global variable
     let player = SKSpriteNode(imageNamed: "player-submarine")
-    
     var gameTimer: Timer?
-        
+    let scoreLabel = SKLabelNode(fontNamed: "Barkerville-Bold")
+    var score = 0 {
+        didSet {
+            scoreLabel.text = "SCORE: \(score)"
+        }
+    }
+    let music = SKAudioNode(fileNamed: "theme-for-harold")
+    
+    
     override func didMove(to view: SKView) {
+        
+        // add music
+        addChild(music)
+        //scoring design
+        scoreLabel.fontColor = UIColor.black.withAlphaComponent(0.5)
+        scoreLabel.position.y = 320
+        addChild(scoreLabel)
+        score = 0
         //position of the player
         player.position = CGPoint(x: -400, y: 250)
         addChild(player)
@@ -69,7 +84,19 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         //make it move across the screen
         let action = SKAction.moveTo(x: -768, duration: 9)
         obstacle.run(action)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.75){
+            let coin = SKSpriteNode(imageNamed: "coin")
+            coin.physicsBody = SKPhysicsBody(texture: coin.texture!, size: coin.texture!.size())
+            coin.physicsBody?.contactTestBitMask = 1
+            coin.physicsBody?.isDynamic = false
+            coin.position.y = CGFloat(rand.nextInt())
+            coin.position.x = 768
+            coin.name = "score"
+            coin.run(action)
+            self.addChild(coin)
         }
+    }
     
     func playerHit(_ node: SKNode){
         if node.name == "obstacle"{
@@ -78,6 +105,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 addChild(explosion)
             }
             player.removeFromParent()
+            music.removeFromParent()
+        } else if node.name == "score"{
+            node.removeFromParent()
+            score += 1
         }
     }
     
